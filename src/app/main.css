@@ -1,0 +1,118 @@
+.back-button{
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.selected-page{
+    background-color: #e5f6ff;
+}
+.fixed-top{
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+}
+.center{
+    margin-top: 5rem !important;
+    max-width: 600px;
+    margin: auto;
+}
+
+.form{
+    background-color: #E8F6FF;
+}
+
+.success{
+    background-color: #E8F6FF;
+}
+
+.success-image{
+    width: 44px;
+}
+
+.submit{
+    width: 100%;
+    height: 50px;
+}
+
+textarea{
+    resize: none;
+}
+
+.title1{
+    font-size: 20px;
+}
+
+.title2{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sub-title{
+    font-size: 18px;
+}
+
+.sub-title2{
+    font-size: 15px;
+    color: #8a8d9f;
+}
+
+.btn-success2{
+    background-color: #1D9BF0;
+    color: #fff;
+    font-size: 16px;
+}
+
+ul{
+    padding-left: 15px;
+    margin: 0;
+    color: #8a8d9f;
+}
+
+.message-section{
+    background-color: #f9f9ff;
+    width: 100%;
+}
+
+.message-box{
+    background-color: #fff;
+}
+
+.reply-box{
+    position: relative;
+}
+
+.reply-button{
+    cursor: pointer;
+    position: absolute;
+    color: #009bfe;
+    background-color: #e5f6ff;
+    border: 1px solid #009bfe;
+    border-radius: 4px;
+    font-size: 12px;
+    bottom: 7px;
+    right: 5px;
+    padding: 2px 8px;
+}
+
+.detail-link{
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.message{
+    font-size: 15px;
+}
+
+.reply{
+    background-color: #F0F0F0;
+    width: 100%;
+    color: #8a8d9f;
+    word-wrap: break-word;
+}
+
+.icon-whatsapp{
+    margin: 0;
+}
