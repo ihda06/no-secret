@@ -139,7 +139,7 @@ export default function Home() {
           <b>Secreto</b>
         </Navbar.Brand>
       </Navbar>
-      <div className="center">
+      <div className="center px-2">
         {!status ? (
           <MessageForm
             newMessage={newMessage}
@@ -174,7 +174,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="message-section p-3 rounded">
+        <div className="message-section py-3 rounded">
           {currentPageData.map((obj, idx) => (
             <MessageSection
               key={obj.data.message_id}
