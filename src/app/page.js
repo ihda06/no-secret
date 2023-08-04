@@ -16,6 +16,10 @@ import uniqueID from "./utils/newId";
 import SuccessForm from "./successForm";
 import merge from "./utils/merge";
 import MessageSection from "./messageSection";
+import { ipv4 } from "ipify2";
+import axios from "axios";
+// import Head from "next/head";
+// import ipify from "ipify";
 
 export default function Home() {
   const pages = [1, 2, 3, 4, 5];
@@ -102,13 +106,24 @@ export default function Home() {
     return merge(messages, replies);
   };
 
+  const getIP = async () => {
+    const IP = await ipv4();
+    const location = await axios({
+      baseURL: "https://geo.ipify.org/api/v2/country,city",
+      method: "get",
+      params: { apiKey: "at_9bVVupAKOiri9dHhk0pQXUbY0G1Um", ip: IP },
+    });
+  };
+
   useEffect(() => {
-    console.log(status);
+    // console.log(status);
     getMessages();
+    // getIP();
   }, []);
 
   return (
     <main className={`${styles.main}`}>
+      <title>Share Secret Feedback About Ihda Anwari</title>
       <Navbar className="fixed-top rounded-bottom justify-content-center shadow-sm">
         <div className="back-button">
           <IoIosArrowBack></IoIosArrowBack>
