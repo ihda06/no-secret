@@ -35,7 +35,7 @@ export default function Home() {
     try {
       return await Airtables(tabel)
         .select({
-          sort: [{ direction: "asc", field: "created_at" }],
+          sort: [{ direction: "desc", field: "created_at" }],
         })
         .all();
     } catch (error) {
